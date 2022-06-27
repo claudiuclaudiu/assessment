@@ -1,0 +1,15 @@
+<persistence-unit name="ro.gshmedia.persistance">
+    <description>Interview for GSHMedia</description>
+    <class>ro.gshmedia.data.model.Product</class>
+    <class>ro.gshmedia.data.model.Order</class>
+
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties>x
+        <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
+        <property name="hibernate.hbm2ddl.auto" value="update"/>
+        <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+        <property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/stock_data"/>
+        <property name="javax.persistence.jdbc.user" value="admin"/>
+        <property name="javax.persistence.jdbc.password" value="nimdanimda"/>
+    </properties>
+</persistence-unit>
